@@ -1,24 +1,12 @@
-# Sentimo
+# Sentimos
 
-## <ins>**About Sentimo** &nbsp;</ins>
-- **Sentimo is a web-application in which the user can write their daily diary on the basis of experiences and emotions.**
-
-- **Our application would recognise the emotion of the user who has either typed notes in his diary or has recorded their own speech and entered in the diary. (under progress)** 
-
-- **Further, Sentimo would recommend certain movies of the best fit genre, based on the user's emotions.**
+## <ins>**About Sentimos**</ins>
+- **Sentimos is a web-application in which the user can write their daily diary on the basis of experiences and emotions.**
 
 ## Git instructions
 `No need to fork for the contributors, directly clone the repo`
 ### git clone 
-> https://github.com/dakshgupta2002/sentimo.git
-
-`Now you need to add a origin to look at this repository`
-### git remote add origin 
-> https://github.com/dakshgupta2002/sentimo.git
-
-`You can now directly pull and push to various branches`  
-
-`after cloning install the dependencies and run the servers`
+> https://github.com/Khlelifi-Assil/sentimos.git
 
 ## CLIENT 
 ___
@@ -26,7 +14,7 @@ ___
 2)  `npm install`   
 3)  `npm start`  
 
-## SERVER - Deployed over Amazon EC2 Linux Machine Image (Mumbai) 
+## SERVER - Deployed over Amazon EC2 Linux Machine Image 
 ___
 1) `cd server`  
 2) `npm install`   
