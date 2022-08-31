@@ -17,7 +17,8 @@ export default function Favorite() {
 
   useEffect(() => {
     const getNotes = async () => {
-      setLoading(true); setError('Fetching Favourite Notes')
+      setLoading(true);
+      setError("Fetching Favourite Notes");
       const res = await fetchFavourite();
       if (res.response.status === 200) {
         setNotes(res.data.notes);
@@ -30,7 +31,7 @@ export default function Favorite() {
   return (
     <div className="favoriteBody">
       <Sidebar />
-      <LoadingScreen/>
+      <LoadingScreen />
       <Tabs variant="scrollable" value={value} onChange={handleChange}>
         <Tab label="Favorite Note" />
         <Tab label="Favorite Movie" />
@@ -63,7 +64,7 @@ export default function Favorite() {
           )}
         </div>
       </TabPanel>
-      
+
       {/* Show fav movie */}
       <TabPanel value={value} index={1}>
         <h1>Recommended Movies here</h1>

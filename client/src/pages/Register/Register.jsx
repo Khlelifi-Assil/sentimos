@@ -45,18 +45,17 @@ export default function Register(props) {
       for (var i = 0; i < missing.length; i++)
         errorMsg += ` ${missing[i]}` + (i !== missing.length - 1 ? ", " : ".");
 
-      toast.error(errorMsg, {icon: '❌'});
+      toast.error(errorMsg, { icon: "❌" });
       return;
     }
 
-    if (password !== confirmPassword)
-    {
+    if (password !== confirmPassword) {
       errorMsg = `Password and Confirm password do not match!`;
       toast.error(errorMsg, {
         duration: 2500,
       });
 
-      // document.getElementById("registerPassword").color = "error"; 
+      // document.getElementById("registerPassword").color = "error";
       // Change color of TextField need to search up a little more will add!!
 
       return;
@@ -73,11 +72,11 @@ export default function Register(props) {
         ).trim() || res?.data?.username;
       localStorage.setItem("name", name);
 
-      toast.success("Registration Successful", {duration: 2000});
+      toast.success("Registration Successful", { duration: 2000 });
       navigate("/");
     } else {
       console.log("error", res.data.msg);
-      toast.error("Username already Taken", {icon: '❌'});
+      toast.error("Username already Taken", { icon: "❌" });
     }
   };
 
@@ -104,17 +103,15 @@ export default function Register(props) {
               minHeight: "100px",
             }}
           />
-            <div className="large-text heading mv mob-mid">
-              Create new account
-              <span className="dot">.</span>
-            </div>
+          <div className="large-text heading mv mob-mid">
+            Create new account
+            <span className="dot">.</span>
+          </div>
         </div>
 
         {/* Create Account Headings mv = margin vertical */}
         <div className="only-form">
           <div className="register-text-container">
-
-
             <div className="login-container mv mob-mid">
               <span className="mui-btn-like">Already a member? </span>
               <Button>

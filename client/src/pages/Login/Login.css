@@ -15,28 +15,20 @@
   align-items: center;
 }
 
-/* Instead of giving div background using img tag now! */
-/* .login-form-image {
-  height: 95vh;
-  background-image: url("../../assets/images/loginBanner.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: scaleX(-1); 
-} */
 
 .login-logo-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .login-input-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
 }
 
 .login-input-container * {
@@ -57,8 +49,8 @@
 }
 
 .sign-up-text {
-    margin-top: 5px;
-    margin-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .heading {
@@ -83,35 +75,35 @@
 }
 
 .login-dot {
-    font-size: 1em;
-    color: #508afa;
+  font-size: 1em;
+  color: #508afa;
 }
 
 @media (max-width: 780px) {
-    .login-logo-header {
-      margin-top: 1rem;
-    }
-    
-    .login-logo-header img {
-      display: none;
-    }
+  .login-logo-header {
+    margin-top: 1rem;
+  }
 
-    .login-input-container {
-      flex-basis: 80%;
-      justify-content: flex-start;
-      align-items: center;
-      margin-top: 5px;
-      margin-bottom: 5px;
-    } 
+  .login-logo-header img {
+    display: none;
+  }
+
+  .login-input-container {
+    flex-basis: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 460px) {
-    .login-input-container {
-        flex-basis: 100%;
-    }
+  .login-input-container {
+    flex-basis: 100%;
+  }
 
-    .login-input-container {
-      flex-basis: 100%;
+  .login-input-container {
+    flex-basis: 100%;
   }
 
   .large-login-text {
@@ -122,12 +114,12 @@
 }
 
 @media (max-width: 270px) {
-    .sign-up-button {
-        display: inline;
-        align-self: center;
-    }
+  .sign-up-button {
+    display: inline;
+    align-self: center;
+  }
 
-    .login-dot {
-        font-size: 40px;
-    }
+  .login-dot {
+    font-size: 40px;
+  }
 }

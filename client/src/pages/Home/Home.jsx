@@ -8,19 +8,24 @@ import Lottie from "react-lottie-player";
 import { Sidebar } from "../../components";
 import landingPageAnimation from "../../assets/lottieSvg/landingPageAnimation.json";
 import answers from "../../assets/lottieSvg/answers.json";
-import thinking from "../../assets/images/thinking.svg"
-import writing from "../../assets/images/writing.svg"
-import join from "../../assets/images/join.svg"
+import thinking from "../../assets/images/thinking.svg";
+import writing from "../../assets/images/writing.svg";
+import join from "../../assets/images/join.svg";
 import "./Home.css";
 
 export default function Home() {
   return (
     <div className="home-container">
       <Sidebar />
-      <footer className="text--center" style={{paddingTop: "10px", paddingBottom: "10px"}}>
-        <Link to="/aboutUs" style={{color: "#fff", textDecoration: "none"}}>About the Developers</Link>
+      <footer
+        className="text--center"
+        style={{ paddingTop: "10px", paddingBottom: "10px" }}
+      >
+        <Link to="/aboutUs" style={{ color: "#fff", textDecoration: "none" }}>
+          About the Developers
+        </Link>
       </footer>
-          
+
       {/* HEADING SENTIMO AND ONE LINER */}
       <Fade triggerOnce>
         <div className="home-heading">
@@ -49,54 +54,58 @@ export default function Home() {
           <div className="confused-points">
             <div className="confused-header text--center">Questions</div>
             <div className="confused-point">
-              <span className="emotesBullet">❓</span> Tired and exhausted from your entire day's work?
+              <span className="emotesBullet">❓</span> Tired and exhausted from
+              your entire day's work?
             </div>
             <div className="confused-point">
-              <span className="emotesBullet">❓</span> Or did something exciting and fascinating happen?
+              <span className="emotesBullet">❓</span> Or did something exciting
+              and fascinating happen?
             </div>
 
             <div className="confused-point">
-              <span className="emotesBullet">❓</span> Lest you're fearful or sad about anything?
+              <span className="emotesBullet">❓</span> Lest you're fearful or
+              sad about anything?
             </div>
           </div>
         </Fade>
 
         <Fade triggerOnce>
-        {/* <Lottie
+          {/* <Lottie
           className="lottie-animation"
           animationData={confusedGuy}
           loop
           play
         /> */}
-        <img src={thinking} alt="" className="lottie-animation" />
+          <img src={thinking} alt="" className="lottie-animation" />
         </Fade>
       </div>
 
       <div className="solution-container">
         <div className="confused-lottie lottie-animation">
-        <Fade triggerOnce>
-          <Lottie
-            style={{ alignSelf: "center" }}
-            animationData={answers}
-            loop
-            play
-          />
+          <Fade triggerOnce>
+            <Lottie
+              style={{ alignSelf: "center" }}
+              animationData={answers}
+              loop
+              play
+            />
           </Fade>
         </div>
         <Fade triggerOnce>
           <div className="confused-points">
             <div className="confused-header text--center">Solutions</div>
             <div className="confused-point">
-              <span className="emotesBullet">💡</span> Do not stress yourself out as you can pour your heart out to us
-              and we won't judge you at all!
+              <span className="emotesBullet">💡</span> Do not stress yourself
+              out as you can pour your heart out to us and we won't judge you at
+              all!
             </div>
             <div className="confused-point">
-              <span className="emotesBullet">💡</span> This is your personalised diary and you can keep all types of
-              notes you want to!
+              <span className="emotesBullet">💡</span> This is your personalised
+              diary and you can keep all types of notes you want to!
             </div>
             <div className="confused-point">
-              <span className="emotesBullet">💡</span> Instead, we'll recommend you entertainment material according
-              to your mood.
+              <span className="emotesBullet">💡</span> Instead, we'll recommend
+              you entertainment material according to your mood.
             </div>
           </div>
         </Fade>
@@ -110,11 +119,7 @@ export default function Home() {
         <Fade triggerOnce>
           <div className="how-it-works-steps">
             <div className="step">
-              <img
-                className="icon"
-                src={writing}
-                alt=""
-              ></img>
+              <img className="icon" src={writing} alt=""></img>
 
               <div className="step-header text--center">CONNECT DEVICE</div>
               <div className="step-content text--center">
@@ -124,15 +129,12 @@ export default function Home() {
             </div>
 
             <div className="step">
-              <img
-                className="icon"
-                src={join}
-                alt=""
-              ></img>
+              <img className="icon" src={join} alt=""></img>
 
               <div className="step-header text--center">That's It</div>
               <div className="step-content text--center">
-                Start writing your diaries and watch movies at your lowest points of life!
+                Start writing your diaries and watch movies at your lowest
+                points of life!
               </div>
             </div>
           </div>

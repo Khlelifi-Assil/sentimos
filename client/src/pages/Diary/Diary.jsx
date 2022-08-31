@@ -26,9 +26,18 @@ export default function Diary() {
         setDate={setDate}
         setInputOpen={setInputOpen}
       />
-      <ModalContainer isOpen={editOpen} close={() => {setEditNoteId(null); setEditOpen(false);}}>
+      <ModalContainer
+        isOpen={editOpen}
+        close={() => {
+          setEditNoteId(null);
+          setEditOpen(false);
+        }}
+      >
         <NoteEdit
-          close={() => { setEditNoteId(null); setEditOpen(false);}}
+          close={() => {
+            setEditNoteId(null);
+            setEditOpen(false);
+          }}
           editNoteId={editNoteId}
           notesEdited={notesEdited}
           setNotesEdited={setNotesEdited}
